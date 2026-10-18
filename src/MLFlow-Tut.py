@@ -7,6 +7,10 @@ from sklearn.metrics import accuracy_score
 
 mlflow.set_tracking_uri('http://127.0.0.1:5000')
 
+# to add and load experiment in your own experiment
+
+mlflow.set_experiment("MLFlow-Exp")
+
 wine = load_wine()
 
 X = wine.data
